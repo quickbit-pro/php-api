@@ -2,7 +2,6 @@ Quickbit php api
 =======
 
 ##Basic Usage - Open new invoice
-=======
 ###Parameters
 | Name  | Type | Required | Description |
 | ------------- | ------------- | ------------- | ------------- |
@@ -36,7 +35,6 @@ echo '<iframe sandbox="allow-scripts" seamless width="100%" height="470px" src="
 |success  | Int | Values 0/1 0->Failed to retrieve information about invoice, 1-> Operation was successful |
 
 ##Basic Usage - Check invoice status
-=======
 ###Parameters
 | Name  | Type | Required | Description |
 | ------------- | ------------- | ------------- | ------------- |
