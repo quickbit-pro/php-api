@@ -33,7 +33,7 @@ echo '<iframe sandbox="allow-scripts" seamless width="100%" height="470px" src="
 |qr  | String | Url for qr code |
 |order_hash  | String | Unique order hash used for checking invoice status |
 |url  | String | Url for embeded invoice |
-|success  | Int | Values 0/1 0->Failed to retrive information about invoice, 1-> Operation was successful |
+|success  | Int | Values 0/1 0->Failed to retrieve information about invoice, 1-> Operation was successful |
 
 ##Basic Usage - Check invoice status
 =======
@@ -42,7 +42,7 @@ echo '<iframe sandbox="allow-scripts" seamless width="100%" height="470px" src="
 | ------------- | ------------- | ------------- | ------------- |
 |api_key  | String | Yes | Api key generated in Quickbit merchant admin (Payment tools -> Api generator) |
 |api_secret  | String | Yes | Api secret generated in Quickbit merchant admin (Payment tools -> Api generator) |
-|order_hash  | String | Yes | Order hash wich was returned at invoice creation |
+|order_hash  | String | Yes | Order hash which was returned at invoice creation |
 ###Example
 ```PHP
 $api_key='';
@@ -56,5 +56,5 @@ $response=$quickbit->getResponse();
 
 | Key | Type | Description |
 | ------------- | ------------- | ------------- |
-|success  | Int | Values 0/1 0->Failed to retrive information about invoice, 1-> Operation was successful |
-|status  | Int | null/1/2/3 null->Failed to retrive information, 1->Invoice is still open (unpaid),2-> Invoice was paid in full, 3->Invoice is expired |
+|success  | Int | Values 0/1 0->Failed to retrieve information about invoice, 1-> Operation was successful |
+|status  | Int | null/1/2/3 null->Failed to retrieve information, 1->Invoice is still open (unpaid),2-> Invoice was paid in full, 3->Invoice is expired |
