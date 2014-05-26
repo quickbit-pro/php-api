@@ -54,5 +54,5 @@ $response=$quickbit->getResponse();
 
 | Key | Type | Description |
 | ------------- | ------------- | ------------- |
-|success  | Int | <ul><li>0->Failed to retrieve information about invoice </li><li> 1 -> Operation was successful</li></ul> |
+|success  | Int | <ul><li>0 -> Failed to retrieve information about invoice </li><li> 1 -> Operation was successful</li></ul> |
 |status  | Int |  <ul><li>null->Failed to retrieve information </li><li> 1 -> Invoice is still open (unpaid) </li><li> 2 -> Invoice was paid in full </li><li> 3 -> Invoice is expired </li></ul>|
