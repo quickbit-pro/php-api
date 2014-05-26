@@ -11,7 +11,7 @@ Quickbit php api
 |amount  | Double | Yes | Price in EUR/USD, must be higher or equal 5.00 |
 |currency  | String | Yes | Valid inputs are EUR or USD |
 |invoice_id  | String | No | Your invoice id or tracking hash |
-
+###Example
 ```PHP
 $api_key='';
 $api_secret='';
@@ -22,6 +22,7 @@ $quickbit=new quickbit();
 $quickbit->setInvoice_id($invoice_id);
 $quickbit->open_invoice($api_key, $api_secret,$amount, $currency);
 $response=$quickbit->getResponse();
+echo '<iframe sandbox="allow-scripts" seamless width="100%" height="470px" src="'.$response['url'].'"></iframe>';
 ```
 ###Response
 
@@ -34,8 +35,6 @@ $response=$quickbit->getResponse();
 |url  | String | Url for embeded invoice |
 |success  | Int | Values 0/1 0->Failed to retrive information about invoice, 1-> Operation was successful |
 
-###Customer information example
-
 ##Basic Usage - Check invoice status
 =======
 ###Parameters
@@ -44,6 +43,7 @@ $response=$quickbit->getResponse();
 |api_key  | String | Yes | Api key generated in Quickbit merchant admin (Payment tools -> Api generator) |
 |api_secret  | String | Yes | Api secret generated in Quickbit merchant admin (Payment tools -> Api generator) |
 |order_hash  | String | Yes | Order hash wich was returned at invoice creation |
+###Example
 ```PHP
 $api_key='';
 $api_secret='';
