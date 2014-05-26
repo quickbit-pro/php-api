@@ -32,7 +32,7 @@ echo '<iframe sandbox="allow-scripts" seamless width="100%" height="470px" src="
 |qr  | String | Url for qr code |
 |order_hash  | String | Unique order hash used for checking invoice status |
 |url  | String | Url for embeded invoice |
-|success  | Int |  <ul><li>0->Failed to retrieve information about invoice </li><li> 1-> Operation was successful</li></ul> |
+|success  | Int |  <ul><li>0 -> Failed to retrieve information about invoice </li><li> 1 -> Operation was successful</li></ul> |
 
 ##Basic Usage - Check invoice status
 ###Parameters
@@ -54,5 +54,5 @@ $response=$quickbit->getResponse();
 
 | Key | Type | Description |
 | ------------- | ------------- | ------------- |
-|success  | Int | <ul><li>0->Failed to retrieve information about invoice </li><li> 1-> Operation was successful</li></ul> |
-|status  | Int |  <ul><li>null->Failed to retrieve information </li><li> 1->Invoice is still open (unpaid) </li><li> 2-> Invoice was paid in full </li><li> 3->Invoice is expired </li></ul>|
+|success  | Int | <ul><li>0->Failed to retrieve information about invoice </li><li> 1 -> Operation was successful</li></ul> |
+|status  | Int |  <ul><li>null->Failed to retrieve information </li><li> 1 -> Invoice is still open (unpaid) </li><li> 2 -> Invoice was paid in full </li><li> 3 -> Invoice is expired </li></ul>|
