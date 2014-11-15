@@ -56,3 +56,10 @@ $response=$quickbit->getResponse();
 | ------------- | ------------- | ------------- |
 |success  | Int | <ul><li>0 -> Failed to retrieve information about invoice </li><li> 1 -> Operation was successful</li></ul> |
 |status  | Int |  <ul><li>null->Failed to retrieve information </li><li> 1 -> Invoice is still open (unpaid) </li><li> 2 -> Invoice was paid in full </li><li> 3 -> Invoice is expired </li></ul>|
+
+Quickbit php api
+=======
+Sandbox mode available on https://sandbox.quickbit.pro
+You need to register new account.
+For TESTING purposes only.
+Do not send any coins on generated addresses!
