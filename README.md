@@ -16,9 +16,11 @@ $api_key='';
 $api_secret='';
 $amount='';
 $currency='';
+$crypto_currency='';
 
 $quickbit=new quickbit();
 $quickbit->setInvoice_id($invoice_id);
+$quickbit->setCrypto_currency($crypto_currency);
 $quickbit->open_invoice($api_key, $api_secret,$amount, $currency);
 $response=$quickbit->getResponse();
 echo '<iframe sandbox="allow-scripts" seamless width="100%" height="470px" src="'.$response['url'].'"></iframe>';
